@@ -1,0 +1,10 @@
+GSAP 3.13.0 / ScrollTrigger 3.13.0
+Copyright 2008-2025 GreenSock / Webflow.
+
+These files are distributed under the GSAP Standard License, not MIT.
+The authoritative license and full terms are available at:
+https://gsap.com/community/standard-license/
+
+The original license URL and copyright notice are retained in the bundled
+JavaScript files. The MIT license at the project root applies only to
+project-authored code and does not override this license.

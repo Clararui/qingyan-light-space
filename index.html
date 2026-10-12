@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#08080c"><meta name="description" content="轻颜相机 · 光，不止一面。一场穿越液态金属与全息人像的沉浸式影像之旅。">
+  <title>轻颜相机 · 光，不止一面</title>
+  <link rel="icon" href="./favicon.svg"><link rel="stylesheet" href="./styles.css">
+  <link rel="preload" href="./hero.webp" as="image">
+  <script type="importmap">{"imports":{"three":"./three.module.min.js"}}</script>
+  <script defer src="./gsap.min.js"></script><script defer src="./ScrollTrigger.min.js"></script>
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#capture">跳至快门</a>
+  <div class="world-background" aria-hidden="true"><div class="ambient ambient-pink"></div><div class="ambient ambient-violet"></div><div class="light-field"></div><div class="grain"></div></div>
+  <div class="type-backdrop" aria-hidden="true"><span class="back-word back-word-hero">QINGYAN</span><span class="back-word back-word-final">轻颜</span></div>
+  <div id="world" role="img" aria-label="悬浮的银色手机、液态金属雕塑与三维人像星环"><img class="fallback-portrait" src="./hero.webp" alt="" width="1067" height="1600"></div>
+  <div class="light-trails" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="cinema-vignette" aria-hidden="true"></div>
+  <div class="flash" aria-hidden="true"></div><div class="aperture-wave" aria-hidden="true"></div>
+  <header class="masthead">
+    <a class="wordmark" href="#top" aria-label="轻颜相机，返回开场"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 1c0 10-5 15-15 15 10 0 15 5 15 15 0-10 5-15 15-15C21 16 16 11 16 1Z"/></svg><span>轻颜<small>QINGYAN CAMERA</small></span></a>
+    <nav aria-label="场景导航"><a href="#top" class="active" aria-label="进入光场" aria-current="location">01</a><a href="#gallery" aria-label="进入人像画廊">02</a><a href="#capture" aria-label="进入快门场景">03</a><a href="#finale" aria-label="进入影像星环">04</a></nav>
+    <a href="#capture" class="header-shutter magnetic" aria-label="前往快门"><span></span>轻触快门</a>
+  </header>
+  <main id="experience">
+    <section id="top" class="chapter" aria-labelledby="hero-title"><div class="chapter-sticky hero-overlay"><div class="hero-note"><span class="mini-cross">+</span> QINGYAN / LIGHT STUDY</div><div class="hero-copy"><p class="eyebrow"><span></span> BEYOND THE FRAME</p><h1 id="hero-title"><span class="title-mask"><span>光，</span></span><span class="title-mask"><span>不止一面<span class="title-dot">。</span></span></span></h1><p class="short-line">轻颜相机</p></div><div class="hero-mark" aria-hidden="true">光有形<br><span>你，无限。</span></div><a class="scroll-cue" href="#gallery"><span class="scroll-line"></span><span>滚动，穿过光场</span></a></div></section>
+    <section id="gallery" class="chapter" aria-labelledby="gallery-title"><div class="chapter-sticky gallery-overlay"><div class="scene-top"><span class="eyebrow">02 / INFINITE MUSES</span><span class="fine-rule"></span></div><div class="gallery-copy"><h2 id="gallery-title">万千光影。<br><span>每一面是你。</span></h2></div><div class="scene-instruction"><span class="mini-cross">+</span><p>移动，照亮空间<br><span class="desktop-hint">悬停人像，走近一瞬</span><span class="touch-hint">轻触人像，走近一瞬</span></p></div><div class="gallery-access" role="group" aria-label="聚焦画廊中的人像"></div></div></section>
+    <section id="capture" class="chapter" aria-labelledby="capture-title"><div class="chapter-sticky capture-overlay"><div class="scene-top"><span class="eyebrow">03 / A MOMENT IN LIGHT</span><span class="fine-rule"></span></div><div class="capture-copy"><h2 id="capture-title">让这一刻，<br><span>飞出画面。</span></h2></div><div class="shutter-control"><button id="shutter" class="shutter magnetic" aria-label="按下快门，生成悬浮人像" disabled><span class="shutter-core"></span><span class="shutter-line"></span></button><p>轻触快门</p><span class="shot-count" aria-live="polite">准备光影</span></div></div></section>
+    <section id="finale" class="chapter" aria-labelledby="finale-title"><div class="chapter-sticky finale-overlay"><p class="eyebrow finale-eyebrow">04 / THE LIGHT IS YOU</p><h2 id="finale-title">轻颜</h2><p class="finale-line">所有光，向你而来。</p><button id="replay" class="replay magnetic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 7a8 8 0 1 1-1 8M5 3v5h5" stroke="currentColor" stroke-width="1.3"/></svg>再来一次</button><span class="finale-signature">QINGYAN CAMERA</span></div></section>
+  </main>
+  <div class="frame-footer"><span class="frame-caption">LIGHT HAS NO LIMITS.</span><div class="chapter-progress" aria-hidden="true"><span></span></div><span class="frame-number">01 / 04</span></div>
+  <div id="loading" role="status" aria-live="polite"><span class="loading-line"></span><span>光场正在苏醒</span></div>
+  <noscript><p class="noscript">开启 JavaScript，进入轻颜光影空间。</p></noscript>
+</body>
+</html>
